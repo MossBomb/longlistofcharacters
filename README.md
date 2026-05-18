@@ -1,1 +1,1 @@
-# longlistofcharacters.github.io
+# longlistofcharacters
