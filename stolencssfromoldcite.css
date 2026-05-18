@@ -1,0 +1,213 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+HTML content. To learn how to do something, just try searching Google for questions like
+"how to change link color." */
+:root {
+  --columnHeight: 120%;
+}
+
+body {
+  color: black;
+  font-family: Verdana;
+  
+}
+
+.important {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    transition: .2s;
+    max-width:1000px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+  }
+  
+  .important:hover {
+    transform: scale(1.1); 
+    
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:#1a1818;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
+  
+  .topnav a:hover {
+    float: left;
+    display: block;
+    background-color: #857f7f;
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
+  
+  .maincolumn {
+    display: block;
+    width: 45%;
+    height: var(--columnHeight);
+    padding: 15px 15px;
+    background-color:#dedcdc;
+    background-size: auto;
+    margin: auto;
+    float: left;
+  }
+  
+  .column {
+    display: block;
+    float: left;
+    width: 45%;
+    height:auto;
+    padding: 15px 15px;
+    background-color:#dedcdc;
+  }
+  
+  .rcolumn {
+    display: block;
+    float: right;
+    width: 45%;
+    height:auto;
+    padding: 15px 15px;
+    background-color:#dedcdc;
+  }
+  
+  
+  .divider {
+    float: left;
+    width: 0.0002%;
+    height: var(--columnHeight);
+    padding: 15px 15px;
+    background-color:#424242;
+    margin: auto;
+  }
+  
+
+ 
+ .tinycolumn {
+    float: left;
+    width: 21%;
+    height: var(--columnHeight);
+    padding: 15px 15px;
+    background-image: url("/titleAssets/Silly.png");
+    margin: auto;
+ 
+
+  }
+  
+  .tinycolumnR {
+    float: right;
+    width: 21%;
+    height: var(--columnHeight);
+    padding: 15px 15px;
+    background-image: url("/titleAssets/Silly.png");
+    margin: auto;
+
+    
+
+  }
+  
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.posterCont {
+  max-width: 500px;
+}
+  
+.poster {
+  transform-origin: top left;
+  transition: .2s;
+  width: 95%;
+  height: auto;
+}
+
+.squiggly {
+  height: 100%;
+}
+ 
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collapsible {
+  overflow: hidden;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.reImg img {
+  transition: .2s;
+  transform-origin: top left;
+}
+
+.reImg img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width:1200px) {
+
+    .tinycolumn {
+      display: none;
+    }
+    .tinycolumnR {
+      display: none;
+    }
+    .divider {
+      display: none;
+    }
+    .rcolumn {
+      float: left;
+      width: 100%
+    }
+    .column {
+      width: 100%;
+    }
+    .maincolumn {
+      width: 100%;
+      height: auto;
+    }
+    .poster {
+    max-width: 400px;
+    max-height: 266px; 
+    
+    }
+    .important {
+      max-width:600px;
+    }
+}
+  
