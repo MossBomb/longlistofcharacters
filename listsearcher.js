@@ -9,17 +9,17 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     const refreshbtn = document.createElement("button");
     refreshbtn.textContent = "Refresh";
     refreshbtn.style.transform = "translateY(100px)";
-    refreshbtn.onclick = clicked;
     thebox.classList.add("maincolumn");
     document.body.appendChild(refreshbtn);
     thebox.style.transform = "translateX(50%)";
     thebox.textContent = character
     document.body.appendChild(thebox);
 
-    function clicked() {
+    refreshbtn.addEventListener("click", function() {
         character = lines[Math.floor(Math.random() * lines.length)];
         thebox.textContent = character
-    }
+        console.log("clicked!");
+    });
     
 })
     .catch(err => console.log(err));
