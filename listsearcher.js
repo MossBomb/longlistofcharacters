@@ -8,7 +8,7 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     const thebox = document.createElement("div");
     const refreshbtn = document.createElement("button");
     refreshbtn.textContent = "Refresh";
-    refreshbtn.style.transform = "translateY(50%)";
+    refreshbtn.style.transform = "translateY(100px)";
     refreshbtn.onclick = clicked;
     thebox.classList.add("maincolumn");
     document.body.appendChild(refreshbtn);
