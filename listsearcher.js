@@ -16,8 +16,7 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     document.body.appendChild(thebox);
 
     refreshbtn.addEventListener("click", function() {
-        character = lines[Math.floor(Math.random() * lines.length)];
-        thebox.textContent = character
+        thebox.textContent = lines[Math.floor(Math.random() * lines.length)];
         console.log("clicked!");
     });
     
