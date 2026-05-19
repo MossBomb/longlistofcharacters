@@ -5,9 +5,13 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     console.log(lines.length);
     console.log(Math.floor(Math.random() * lines.length));
     const character = lines[Math.floor(Math.random() * lines.length)];
-    const box = document.createElement("maincolumn");
-    const text = document.createElement("p");
-    box.appendChild(text);
-    document.body.appendChild(box);
+    const thebox = document.createElement("maincolumn");
+    const thetext = document.createElement("p");
+    const textnode = document.createTextNode(character);
+    thetext.appendChild(textnode);
+    thebox.appendChild(thetext);
+    document.body.appendChild(thebox);
+
+    document.body.appendChild(thetext);
 })
     .catch(err => console.log(err));
