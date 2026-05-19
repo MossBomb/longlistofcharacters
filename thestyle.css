@@ -178,36 +178,3 @@ body {
 .reImg img:hover {
   transform: scale(1.2);
 }
-
-@media screen and (max-width:1200px) {
-
-    .tinycolumn {
-      display: none;
-    }
-    .tinycolumnR {
-      display: none;
-    }
-    .divider {
-      display: none;
-    }
-    .rcolumn {
-      float: left;
-      width: 100%
-    }
-    .column {
-      width: 100%;
-    }
-    .maincolumn {
-      width: 100%;
-      height: auto;
-    }
-    .poster {
-    max-width: 400px;
-    max-height: 266px; 
-    
-    }
-    .important {
-      max-width:600px;
-    }
-}
-  
