@@ -7,7 +7,7 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     const character = lines[Math.floor(Math.random() * lines.length)];
     const thebox = document.createElement("div");
     thebox.classList.add("maincolumn");
-    thebox.style.transform = "translateX(50px)";
+    thebox.style.transform = "translateX(50%)";
     thebox.textContent = character
     document.body.appendChild(thebox);
 })
