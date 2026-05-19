@@ -2,6 +2,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="thestyle.css" rel="stylesheet" type="text/css" media="all">
  </head>
   <body>
    <p>Here you can get a randomly generated character from a list of over 5000 characters from pop culture.</p>
