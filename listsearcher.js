@@ -8,5 +8,6 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     const box = document.createElement('maincolumn');
     const text = document.createElement('p');
     box.appendChild(text);
+    document.body.appendChild(box);
 })
     .catch(err => console.log(err));
