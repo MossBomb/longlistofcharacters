@@ -11,6 +11,7 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     const textnode = document.createTextNode(character);
     thetext.appendChild(textnode);
     thebox.appendChild(thetext);
+    thebox.textContent = character
     document.body.appendChild(thebox);
 
     document.body.appendChild(thetext);
