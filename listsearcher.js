@@ -1,4 +1,4 @@
-fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
+fetch('list.tsv')
 .then(res => res.text())
 .then(data => {
     const lines = data.trim().split('\n');
