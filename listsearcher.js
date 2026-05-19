@@ -13,6 +13,7 @@ fetch('https://mossbomb.github.io/longlistofcharacters/list.tsv')
     thebox.classList.add("maincolumn");
     document.body.appendChild(refreshbtn);
     thebox.style.transform = "translateX(50%)";
+    thebox.style.transform = "translateY(25%)";
     thebox.textContent = character
     document.body.appendChild(thebox);
 
