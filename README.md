@@ -7,7 +7,8 @@
   <body>
    <p>Here you can get a randomly generated character from a list of over 5000 characters from pop culture.</p>
    <div class = "maincolumn">
-    <script type="text/javascript" src = "listsearcher.js"></script>
+    <p>testing tesdting 1 2 3</p>
    </div>
+   <script type="text/javascript" src = "listsearcher.js"></script>
   </body>
 </html>
